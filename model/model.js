@@ -1,11 +1,8 @@
 const mongoose = require("mongoose");
 
-const data = new mongoose.Schema({
-    name: String,
-    email: String,
-    password: String,
-    age: Number,
-    gender: String
+const seller = new mongoose.Schema({
+    ShopName: String,
+    accessToken: String,
 })
 
-module.exports = mongoose.model('datas',data);
+module.exports = mongoose.model('seller',seller);
